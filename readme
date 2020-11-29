@@ -1,0 +1,11 @@
+freecode.org  (https://www.youtube.com/watch?v=SLB_c_ayRMo)
+======================= Project ===========================
+1.create vpc
+2.create internet gateway
+3.create custom route table
+4.create a subnet
+5.associate subnet with route table
+6.create security group to allow port 22,80 and 443
+7.create a network interface with an ip in the subnet created in step #4
+8.assign an elastic ip for the network interface created in step #7
+9.create ubuntu server install/enable apache2
