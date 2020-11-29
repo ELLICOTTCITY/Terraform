@@ -9,3 +9,4 @@ freecode.org  (https://www.youtube.com/watch?v=SLB_c_ayRMo)
 7.create a network interface with an ip in the subnet created in step #4
 8.assign an elastic ip for the network interface created in step #7
 9.create ubuntu server install/enable apache2
+===============================================================
