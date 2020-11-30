@@ -11,3 +11,17 @@ freecode.org  (https://www.youtube.com/watch?v=SLB_c_ayRMo)
 9.create ubuntu server install/enable apache2
 ===============================================================
 Several examples ::  https://github.com/hashicorp/terraform-provider-aws/tree/master/examples/elb     
+===============================================================
+commands
+===============================================================
+terraform init
+terraform plan
+terraform apply
+terraform apply --auto-approve
+terraform destroy
+terraform show
+terraform  state list
+terraform state show  <one item> 
+terraform refresh
+terraform destroy -target aws_instance.web-server-instance
+terraform apply -target aws_instance.web-server-instance
