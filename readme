@@ -27,3 +27,11 @@ terraform destroy -target aws_instance.web-server-instance
 terraform apply -target aws_instance.web-server-instance
 terraform apply -var-file subnet.tfvars --auto-approve      ** terraform.tfvars is the default, along with that we can also subnet.tfvars file also.
 terraform destory -var-file subnet.tfvars --auto-approve
+================================================================
+Generating a key-pair in UNIX server  ssh-keygen  -f  tf-demo
+sudo  apt -y install openssh-server
+sudo service ssh status
+sudo service ssh start
+sudo service ssh enable
+files in UBUNTU :: C:\Users\venkat\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\venkaty
+================================================================
