@@ -25,3 +25,5 @@ terraform state show  <one item>
 terraform refresh
 terraform destroy -target aws_instance.web-server-instance
 terraform apply -target aws_instance.web-server-instance
+terraform apply -var-file subnet.tfvars --auto-approve      ** terraform.tfvars is the default, along with that we can also subnet.tfvars file also.
+terraform destory -var-file subnet.tfvars --auto-approve
