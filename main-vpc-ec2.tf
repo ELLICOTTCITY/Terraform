@@ -126,6 +126,10 @@ resource "aws_eip" "web-server-cipone" {
   depends_on = [ aws_internet_gateway.igw ]
 }
 
+output "server_public_ip" {
+  value = aws_eip.web-server-cipone.public_ip
+}
+
 #9.create ubuntu server install/enable apache2
 resource "aws_instance" "web-server-instance" {
   ami = "ami-0885b1f6bd170450c"
