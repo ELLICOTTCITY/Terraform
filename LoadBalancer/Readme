@@ -1,1 +1,23 @@
-1) Create Target Group.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Application Load Balancer
+http://100daysofdevops.com/21-days-of-aws-using-terraform-day-4-creating-application-load-balanceralb-using-terraform/
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1) Create Target Group -::-  
+---------------------------
+    Name (my-target-type)
+    Target Type (ip, Instance, Lamdba function)
+    Protocol (http), port(80)
+    VPC (VPC-ID) 
+    Health Check (apache /var/www/html/test.html)
+    Advanced Health check --> healthy threshhold 5, Unhealthy threshold 2, timeout 5, interval 30, Successcodes 200 
+
+2) Application Load Balancer ::-
+--------------------------------   
+   Name
+   Scheme  (Internet Facting, Internal)
+   IP AdressType  (ipv4/dual stack)
+   Listeners -->  Load Balancer protocol, port
+   Availability Zones --> 2 subnets
+   Security Group
+   Configure Routing --> target gorup, name
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
