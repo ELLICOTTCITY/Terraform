@@ -1,1 +1,38 @@
-
+freecode.org  (https://www.youtube.com/watch?v=SLB_c_ayRMo)
+======================= Project ===========================
+1.create vpc
+2.create internet gateway
+3.create custom route table
+4.create a subnet
+5.associate subnet with route table
+6.create security group to allow port 22,80 and 443
+7.create a network interface with an ip in the subnet created in step #4
+8.assign an elastic ip for the network interface created in step #7
+9.create ubuntu server install/enable apache2
+===============================================================
+Several examples ::  https://github.com/hashicorp/terraform-provider-aws/tree/master/examples/elb     
+===============================================================
+commands
+===============================================================
+terraform init
+terraform plan
+terraform apply
+terraform apply --auto-approve
+terraform destroy
+terraform show
+terraform  state list
+terraform state show  <one item> 
+terraform refresh
+terraform destroy -target aws_instance.web-server-instance
+terraform apply -target aws_instance.web-server-instance
+terraform apply -var-file subnet.tfvars --auto-approve      ** terraform.tfvars is the default, along with that we can also subnet.tfvars file also.
+terraform destory -var-file subnet.tfvars --auto-approve
+terraform console
+================================================================
+Generating a key-pair in UNIX server  ssh-keygen  -f  tf-demo
+sudo  apt -y install openssh-server
+sudo service ssh status
+sudo service ssh start
+sudo service ssh enable
+files in UBUNTU :: C:\Users\venkat\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\venkaty
+================================================================
